@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dionela Welding & Fabrication</title>
+    <style type="text/css">
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header .logo h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-mt5t1VwWh3kdpLauPQucRQHuZsYY90xizQ&s'); /* Replace with actual image */
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            min-height: 400px;
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);  /* Semi-transparent overlay */
+            z-index: -1;
+        }
+
+        .hero h2 {
+            font-size: 3em;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .hero button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .hero button:hover {
+            background-color: #c0392b;
+        }
+
+        /* About Us Section */
+        .about, .services, .gallery, .contact {
+            background-color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .about h2, .services h2, .gallery h2, .contact h2 {
+            font-size: 2.3em;
+            margin-bottom: 20px;
+        }
+
+        .about p, .services ul, .gallery-images {
+            font-size: 1.0em;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Services List */
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services ul li {
+            margin: 10px 0;
+        }
+
+        /* Gallery Images */
+        .gallery-images img {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        /* Contact Form */
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .contact form input,
+        .contact form textarea,
+        .contact form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            background-color: #e74c3c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact form button:hover {
+            background-color: #c0392b;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header .logo h1 {
+                font-size: 2em;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .hero h2 {
+                font-size: 2.5em;
+            }
+
+            .hero p {
+                font-size: 1.2em;
+            }
+
+            .hero button {
+                padding: 12px 25px;
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>Dionela Welding & Fabrication</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section (Hero) -->
+    <section id="home" class="hero">
+        <h2>Your Trusted Welding & Fabrication Experts</h2>
+        <p>Custom welding and fabrication services for all industries.</p>
+        <button>Get a Quote</button>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>At Dionela Welding & Fabrication, we’ve been providing top-quality welding and fabrication services for over 30 years. Our team of experts is committed to delivering precision work and outstanding customer service for projects of all sizes.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <p>We offer a range of professional welding and fabrication services, including but not limited to:</p>
+        <ul>
+            <li>Custom Metal Fabrication</li>
+            <li>Welding Services for Commercial & Residential Projects</li>
+            <li>Structural Steel Fabrication</li>
+            <li>Metal Repairs and Modifications</li>
+            <li>Project Consultation and Design</li>
+        </ul>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>Our Work</h2>
+        <p>Here are some of the projects we’ve worked on:</p>
+        <div class="gallery-images">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrqVzQo2mCocWR86WPt1dnaYa6s4CHDosHPQ&s" alt="Project 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWzg28x3nUJoEsC_7DOghURy9FnjOPCh82mxm_zpfFzefARsa9bYDzQ24pA1rEukEJbQY&usqp=CAU" alt="Project 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcLS-Wik9MoiuFdXbGfV-GBVM629FpaLB8hw&s" alt="Project 3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgDi0TTtiyahh1Z0KuWvyAbR6zFFyUDFw2hlMK56h2zHimhmIAb0CHJ3vpuDdVbTpvQnM&usqp=CAU" alt="Project 4">
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you. Get in touch with us using the form below:</p>
+        <form action="submit_form.php" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Dionela Welding & Fabrication. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
